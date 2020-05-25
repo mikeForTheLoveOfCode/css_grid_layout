@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #333;
+    color: #fff;
+}
+
+.container{
+    display: grid;
+    /* divide the grid into four colums */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.container > div{
+    height: 210px;
+    background-size: cover;
+    /* make the image centered across the div */
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
+.container > div:hover{
+    opacity: 0.7;
+    transform: scale(0.98)
+}
+
+.container > div:nth-of-type(1){
+    grid-column: 1/3;
+}
+.container > div:nth-of-type(6){
+    grid-column: 3/5;
+}
+.container > div:nth-of-type(9){
+    grid-column: 3/5;
+}
+.container > div:nth-of-type(10){
+    grid-column: 1/3;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+h2 span{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.bg1{
+    /* background-image: url(/Images/blueberries-cake-chocolate-chocolate-cake-291528.jpg); */
+    background-image: url(https://unsplash.com/photos/kPxsqUGneXQ);
+
+}
+
+.bg2{
+    /* background-image: url(/Images/shallow-focus-photography-of-chocolate-cupcakes-1028714.jpg); */
+    background-image: url(https://unsplash.com/photos/_y5CCcYWTjU);
+}
